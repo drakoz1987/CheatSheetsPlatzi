@@ -22,7 +22,22 @@ git Comando principal a utilizar en Git
             -m "mensaje" anade un mensaje al commit, es recomendable ser explicito en el mensaje
             -m "nuevo mensaje" --amend permite enmendar un error en el commit anterior y reemplazarlo por el nuevo
             
-        git log muestra los commit hechos en el repositorio
+        log muestra los commit hechos en el repositorio
+            --oneline resume el detalle de un log a una linea
+            --graph da un grafico de la historia en la que se han hecho los commits
+            -numero mustra los ultimos numero d commits
+                    
+        tag crea etiquetas para los commits
+            -a version -m  crea una etiqueta anotada con una string
+            version crea una etiqueta ligera por ejemplo para asignar una version
+            version SHA1_del_commit_a_etiquetar permite etiquetar commits pasados
+            -d etiqueta permite borrar la etiqueta indicada
+            -f etiqueta permite renombrar la etiqueta indicada 
+            -f -a etiqueta -m mensaje permite cambiar una etiqueta por otra en este caso usando una etiqueta anotada
         
+        diff sha1 muestra diferencias entre commits con el estado actual
+        diff sha1 sha1 muestra diferencia entre dos commits
         
-        
+        reset permite cambiar la historia del repo 
+            --soft sha1 elimina los cambios desde el commit indicado por el sha1 pero soft devuelve el commit a stage no elimina nada solo revierte eso.
+            --mixed sha1 mixed saca el cambio del staging area no borra archivos 
