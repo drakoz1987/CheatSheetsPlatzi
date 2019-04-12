@@ -41,3 +41,16 @@ git Comando principal a utilizar en Git
         reset permite cambiar la historia del repo 
             --soft sha1 elimina los cambios desde el commit indicado por el sha1 pero soft devuelve el commit a stage no elimina nada solo revierte eso.
             --mixed sha1 mixed saca el cambio del staging area no borra archivos 
+        
+        branch nombre permite crear una rama para no alterar la master y hacer los cambios que se deseen.
+            -l listado de ramas
+            -d nombre borra rama sin commits pendientes
+            -D nombre borra rama sin importar commits pendientes
+            -m nombre_anterior nombre nuevo renombra rama
+            
+        checkout nombre o sha1 permite ir a otras ramas u otros commits
+            -b nombre crea una rama nueva y ns coloca en ella automaticamente
+            
+        merge nombre_rama permite unir la rama en la que se esta con la rama mencionada.  
+        
+        
